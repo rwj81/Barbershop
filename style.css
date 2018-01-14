@@ -1,0 +1,83 @@
+
+header {
+  text-align: center;
+  text-shadow: 2px 2px 1px #222;
+  font-size: 1.5em;
+}
+
+
+.menu {
+  text-align: center;
+
+}
+
+footer {
+  text-align: center;
+}
+
+
+
+/*flexbox*/
+.container {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-items: flex-start;
+
+          justify-content: space-between;
+          background-color: #e8e5d3;
+          background-image: url("https://www.transparenttextures.com/patterns/white-wall-3.png");
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        }
+
+.container div {
+  margin: auto;
+  padding: 2em;
+  border-top: 2px solid black;
+
+}
+
+.one, .two, .three, .four, .five {
+  height: auto;
+  align-content: flex-start;
+}
+/*
+.one, .two, {
+  flex-grow: 2
+}
+
+
+/* Clearfix via flexbox*/
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+
+
+
+
+
+
+
+/*font family*/
+body {
+  font-family: "Courier New", Monaco, monospace;
+}
+
+/*Media Queries (mobile first / responsive web design)*/
+
+
+@media (min-width: 769px) {
+
+}
+
+@media (min-width: 1025px) {
+
+}
