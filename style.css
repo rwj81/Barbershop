@@ -21,13 +21,13 @@ footer {
 .container {
           display: flex;
           flex-direction: column;
-          flex-wrap: wrap;
-          align-items: flex-start;
+          flex-wrap: nowrap;
+          align-items: center;
 
           justify-content: space-between;
-          background-color: #e8e5d3;
-          background-image: url("https://www.transparenttextures.com/patterns/white-wall-3.png");
-        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        /*  background-color: #e8e5d3;
+          background-image: url("https://www.transparenttextures.com/patterns/white-wall-3.png");   */
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! --comments from source site (wj) */
         }
 
 .container div {
@@ -37,17 +37,20 @@ footer {
 
 }
 
-.one, .two, .three, .four, .five {
+.one, .two, .three, .four, .five, .six {
   height: auto;
   align-content: flex-start;
+  width: 95%;
 }
-/*
+
 .one, .two, {
   flex-grow: 2
 }
 
 
-/* Clearfix via flexbox*/
+/* Sticky Footer via flexbox*/
+
+/*FOOTER IS NOT CURRENTLY STICKING IN CHROME BUT IT IS IN FIREFOX*/
 
 html, body {
   height: 100%;
@@ -55,10 +58,16 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh; /* can remove this is trial*/
 }
+.footer {           /* can remove this is trial*/
+  margin-top: auto; /* can remove this is trial*/
+}                   /* can remove this is trial*/
+
 .content {
   flex: 1 0 auto;
-}
+  min-height: calc(100vh - 89px); /* can remove this is trial*/
+  }
 
 
 
@@ -67,7 +76,7 @@ body {
 
 
 /*font family*/
-body {
+body, button {
   font-family: "Courier New", Monaco, monospace;
 }
 
