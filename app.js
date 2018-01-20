@@ -3,10 +3,10 @@
     //AJAX Request triggered by button click
  function sendAJAX() {
 
-    var xhr = new XMLHttpRequest();
-  	xhr.onreadystatechange = function () {
-   	if(xhr.readyState === 4) {
-        var employees = JSON.parse(xhr.responseText);
+    var checkAvailability = new XMLHttpRequest();
+  	checkAvailability.onreadystatechange = function () {
+   	if(checkAvailability.readyState === 4) {
+        var employees = JSON.parse(checkAvailability.responseText);
         var statusHTML = '<ul class="bulleted">';
         for (var i=0; i<employees.length; i += 1) {
           if (employees[i].available === true) {
@@ -16,23 +16,40 @@
           }
           statusHTML += employees[i].name;
           statusHTML += '</li>';
+          statusHTML += '<br>';
           }
           statusHTML += '</ul>';
           document.getElementById('staffAvailability').innerHTML = statusHTML;
         }
     	};
 
-    	xhr.open('GET', 'staffstatus.json');
-    	xhr.send();
+    	checkAvailability.open('GET', 'staffstatus.json');
+    	checkAvailability.send();
 
     }
 
-//can I set up my own local server? I keep getting: 'xml parsing error: syntax error'
-//resume at page 213 and video 'Processing JSON data'
+    //can I set up my own local server? I keep getting: 'xml parsing error: syntax error' //
 
-//remember to check JSON data with online evaluator: https://jsonlint.com/
+    //remember to check JSON data with online evaluator: https://jsonlint.com/ //
 
 
+//Google Maps API Function to show Location
+
+    // API key is  AIzaSyBuAHtb7O6YTvA6ef-GC_gnFApU5aMSn0E
+
+function initMap() {
+        var uluru = {lat: 38.251078, lng: -85.639735};
+        var map = new google.maps.Map(document.getElementById('location'), {
+          zoom: 10,
+          center: uluru
+
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+        map.setMapTypeId('terrain');
+      }
 
 
 

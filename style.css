@@ -21,7 +21,7 @@ footer {
 .container {
           display: flex;
           flex-direction: column;
-          flex-wrap: nowrap;
+          flex-wrap: wrap;
           align-items: center;
 
           justify-content: space-between;
@@ -33,7 +33,7 @@ footer {
 .container div {
   margin: auto;
   padding: 2em;
-  border-top: 2px solid black;
+
 
 }
 
@@ -41,6 +41,11 @@ footer {
   height: auto;
   align-content: flex-start;
   width: 95%;
+  border-top: 2px solid black;
+}
+
+.six {
+  border-bottom: 2px solid black;
 }
 
 .one, .two, {
@@ -48,9 +53,9 @@ footer {
 }
 
 
-/* Sticky Footer via flexbox*/
+/* Sticky Footer via flexbox experiment*/
 
-/*FOOTER IS NOT CURRENTLY STICKING IN CHROME BUT IT IS IN FIREFOX*/
+/*FOOTER IS NOT CURRENTLY STICKING IN CHROME BUT IT IS IN FIREFOX--fixed this by making footer part of the flexbox so the css below isn't needed:
 
 html, body {
   height: 100%;
@@ -58,19 +63,69 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* can remove this is trial*/
+  min-height: 100vh;
 }
-.footer {           /* can remove this is trial*/
-  margin-top: auto; /* can remove this is trial*/
-}                   /* can remove this is trial*/
-
+.footer {
+ margin-top: auto;
+}
 .content {
   flex: 1 0 auto;
-  min-height: calc(100vh - 89px); /* can remove this is trial*/
+  min-height: calc(100vh - 89px);
   }
 
+/*AJAX Barber Availability Response*/
+
+.CheckCurrentAvailability {
+  border-radius: 3px;
+  width: auto;
+}
+
+ul {
+  list-style: none;
+}
 
 
+  ul.bulleted .available {
+    color: #5A6772;
+  }
+  ul.bulleted .available:before {
+    content: "Available";
+    background-color: #5fcf80;
+    padding: 3px 2px 2px;
+    border-radius: 2px;
+    text-align:center;
+    width: 25px;
+    margin: 1.5em;
+  }
+  ul.bulleted .unavailable {
+    color: #A7B4BF;
+  }
+  ul.bulleted .unavailable:before {
+    content: "Unavailable";
+    background-color: #ed5a5a;
+    padding: 3px 2px 2px;
+    border-radius: 2px;
+    text-align:center;
+    width: 25px;
+    margin: 1.5em;
+  }
+
+/* -----------------------------------------------*/
+  ul.bulleted {
+    margin-bottom: 30px;
+  }
+
+  ul.bulleted li {
+    padding-left: 40px;
+  }
+
+/*Google Maps API Map style*/
+
+#location {
+  width: 40em;
+  height: 20em;
+  border-radius: 2px;
+}
 
 
 
