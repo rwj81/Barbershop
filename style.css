@@ -8,7 +8,6 @@ header {
 
 .menu {
   text-align: center;
-
 }
 
 footer {
@@ -23,12 +22,8 @@ footer {
           flex-direction: column;
           flex-wrap: wrap;
           align-items: center;
-
           justify-content: space-between;
-        /*  background-color: #e8e5d3;
-          background-image: url("https://www.transparenttextures.com/patterns/white-wall-3.png");   */
-        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! --comments from source site (wj) */
-        }
+          }
 
 .container div {
   margin: auto;
@@ -122,12 +117,20 @@ ul {
 /*Google Maps API Map style*/
 
 #location {
-  width: 40em;
+  width: 30em;
   height: 20em;
-  border-radius: 2px;
+  border-radius: 3px;
+  position: fixed; /*this can be removed*/
+
 }
 
-
+#containerBackground {
+  background-image: url('../razorandbrush.jpg');
+  background-size: cover;
+  background-position: top;
+  color: black;
+  text-shadow: 1px 1px .5px #deb887;
+  }
 
 
 /*font family*/
@@ -135,7 +138,7 @@ body, button {
   font-family: "Courier New", Monaco, monospace;
 }
 
-/*Media Queries (mobile first / responsive web design)*/
+/*Media Queries (mobile first / responsive web design/if not using flexbox)*/
 
 
 @media (min-width: 769px) {
