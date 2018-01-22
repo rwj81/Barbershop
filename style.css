@@ -81,7 +81,7 @@ ul {
 
 
   ul.bulleted .available {
-    color: #5A6772;
+    color: black;
   }
   ul.bulleted .available:before {
     content: "Available";
@@ -93,7 +93,7 @@ ul {
     margin: 1.5em;
   }
   ul.bulleted .unavailable {
-    color: #A7B4BF;
+    color: black;
   }
   ul.bulleted .unavailable:before {
     content: "Unavailable";
@@ -117,12 +117,14 @@ ul {
 /*Google Maps API Map style*/
 
 #location {
-  width: 30em;
+  width: 60%;
   height: 20em;
   border-radius: 3px;
-  position: fixed; /*this can be removed*/
+  position: fixed;
 
 }
+
+/*background images and styles */
 
 #containerBackground {
   background-image: url('../razorandbrush.jpg');
@@ -131,6 +133,16 @@ ul {
   color: black;
   text-shadow: 1px 1px .5px #deb887;
   }
+
+#specialsBackground {
+  background-image: url('../brushes.jpg');
+  background-size: cover;
+  background-position: top;
+  color: black;
+  text-shadow: 1px 1px .5px #deb887;
+}
+
+
 
 
 /*font family*/
