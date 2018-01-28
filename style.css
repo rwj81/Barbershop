@@ -14,6 +14,52 @@ footer {
   text-align: center;
 }
 
+/* Navbar with logo */
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #F2F2F2;
+  padding: .3em 0;
+
+  }
+
+
+.logo {
+   margin-left: 5%;
+  }
+
+.logo img {
+   display: block;
+  }
+
+nav {
+   margin: .5em 0 0 5%;
+  }
+
+header ul li {
+   display: inline-block;
+   padding: 0 1.4em 0 0;
+   font-size: 1.3em;
+   font-weight: bold;
+  }
+
+header ul li a {
+   text-decoration: none;
+   color: black;
+  }
+
+li a.active {
+   color: #000000;
+   border-bottom: 2px solid #000000;
+   font-weight: 300;
+  }
+
+li a:hover {
+   color:  #deb887;
+   text-decoration: underline;
+  }
+
 
 
 /*flexbox*/
@@ -142,18 +188,48 @@ ul {
   text-shadow: 1px 1px .5px #deb887;
 }
 
+#staffBackground {
+  background-image: url('../razor.jpg');
+  background-size: cover;
+  background-position: top;
+  color: black;
+  text-shadow: 1px 1px .5px #deb887;
+}
 
-
+/*background for header commented out in favor of clean white background
+header {
+  background-image: url('../plaster.jpg');
+  background-size: cover;
+  background-position: top;
+  padding: 0;
+}      ------*/
 
 /*font family*/
 body, button {
   font-family: "Courier New", Monaco, monospace;
 }
 
-/*Media Queries (mobile first / responsive web design/if not using flexbox)*/
+/*Media Queries (mobile first / responsive web design/if/when nothandled bu using flexbox)*/
 
 
 @media (min-width: 769px) {
+
+  /* navigation with logo */
+.headerContainer {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+   margin-left: 2.3em;
+
+ }
+
+ nav {
+   align-self: center;
+   margin: 0 0.8em 0 0;
+ }
+
 
 }
 
