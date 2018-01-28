@@ -173,7 +173,7 @@ ul {
 /*background images and styles */
 
 #containerBackground {
-  background-image: url('../razorandbrush.jpg');
+  background-image: url('images/razorandbrush.jpg');
   background-size: cover;
   background-position: top;
   color: black;
@@ -181,7 +181,7 @@ ul {
   }
 
 #specialsBackground {
-  background-image: url('../brushes.jpg');
+  background-image: url('images/brushes.jpg');
   background-size: cover;
   background-position: top;
   color: black;
@@ -189,7 +189,7 @@ ul {
 }
 
 #staffBackground {
-  background-image: url('../razor.jpg');
+  background-image: url('images/razor.jpg');
   background-size: cover;
   background-position: top;
   color: black;
