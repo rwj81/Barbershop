@@ -81,7 +81,7 @@ li a:hover {
 .one, .two, .three, .four, .five, .six {
   height: auto;
   align-content: flex-start;
-  width: 95%;
+  width: 80%;      /*had been 95% before adjusting for image issues*/
   border-top: 2px solid black;
 }
 
