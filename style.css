@@ -25,9 +25,13 @@ footer {
   }
 
 
-.logo {
-   margin-left: 5%;
-  }
+.banner {
+   transition: transform .4s; /* Animation */
+    }
+
+.banner:hover {
+  transform: scale(1.5);
+}
 
 .logo img {
    display: block;
@@ -178,6 +182,9 @@ ul {
   background-position: top;
   color: black;
   text-shadow: 1px 1px .5px #deb887;
+  /*optional feature to soften background
+  background-color: #c68c53;
+  background-blend-mode: color-dodge; */
   }
 
 #specialsBackground {
@@ -186,6 +193,9 @@ ul {
   background-position: top;
   color: black;
   text-shadow: 1px 1px .5px #deb887;
+  /*optional feature to soften background
+  background-color: #c68c53;
+  background-blend-mode: color-dodge; */
 }
 
 #staffBackground {
@@ -194,15 +204,12 @@ ul {
   background-position: top;
   color: black;
   text-shadow: 1px 1px .5px #deb887;
+  /*optional feature to soften background
+  background-color: #c68c53;
+  background-blend-mode: color-dodge; */
 }
 
-/*background for header commented out in favor of clean white background
-header {
-  background-image: url('../plaster.jpg');
-  background-size: cover;
-  background-position: top;
-  padding: 0;
-}      ------*/
+
 
 /*font family*/
 body, button {
@@ -214,16 +221,11 @@ body, button {
 
 @media (min-width: 769px) {
 
-  /* navigation with logo */
+  /* navigation bar */
 .headerContainer {
   flex-direction: row;
   justify-content: space-between;
 }
-
-.logo {
-   margin-left: 2.3em;
-
- }
 
  nav {
    align-self: center;

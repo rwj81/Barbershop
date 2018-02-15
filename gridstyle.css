@@ -1,0 +1,129 @@
+body{
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  background-image: url('images/razorandbrush.jpg');
+  background-size: cover;
+  background-position: top;
+
+}
+#content{
+    display: grid;
+    grid-template-columns: 55% 45%;  /* or  200px 200px; */
+    grid-template-rows: .55fr 1fr;
+    max-width: 1260px;
+    grid-gap: 5px;
+    margin: 0 auto;
+    }
+
+
+#content div{
+  /*background: #3bbced; */
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px #888888;
+}
+
+.a {
+  grid-column: 1/3;
+  background: white;
+  color:#252323;
+}
+
+.b {
+  grid-row: 2/4;
+  color:#252323;
+}
+
+.c {
+  background-position: center;
+  background-size: cover;
+}
+.d {
+  color:#252323;
+}
+.e {
+  grid-column: 2;
+  grid-row: 3/5;
+  color:#252323;
+}
+.f {
+  color:#252323;
+}
+.g {
+  color:#252323;
+}
+ .h {
+   grid-column: 1;
+   grid-row: 4/6;
+   color:#252323;
+ }
+
+
+.i {
+  grid-column: 1/3;
+  color:#252323;
+}
+
+/* Media Queries */
+
+
+
+@media (min-width: 690px) {
+    #content{
+      display: grid;
+      grid-template-columns: 30% 20% 40%;
+      grid-template-rows: 1.5fr 1.5fr 1.5fr;
+      max-width: 1260px;
+      grid-gap: 10px;
+      margin: 0 auto;
+        }
+        .a {
+          grid-column: 1/4;
+        }
+
+        .b {
+          grid-row: 2/4;
+        }
+
+        .c {
+
+        }
+        .d {
+
+        }
+        .f {
+          grid-column: 3/4;
+          grid-row: 3/5;
+        }
+        .e {
+          grid-row: 3/5;
+        }
+        .g {
+          color:#252323;
+        }
+         .h {
+           grid-column: 3/4;
+           grid-row: 5/7;
+        }
+
+
+        .i {
+          grid-column: 1/3;
+          grid-row: 5/7;
+        }
+
+  }
+
+/*------------------- original non-media query format
+
+#content{
+  display: grid;
+  grid-template-columns: 30% 20% 40%;
+  grid-template-rows: 1.5fr 1.5fr 1.5fr;
+  max-width: 1260px;
+  grid-gap: 10px;
+  margin: 0 auto;
+}
+
+---------------------------------*/

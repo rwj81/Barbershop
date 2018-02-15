@@ -13,4 +13,4 @@ $("button").click(function(){
 });
 });
 
-//Next need a way to stop first alert function so it doesn't post after submit button clears. 1/28/18
+//Next need a way to stop first alert function so it doesn't post after submit button clears.  try a loop that runs only once? 1/28/18
