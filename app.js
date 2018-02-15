@@ -28,9 +28,10 @@
 
     }
 
-    //I have to run this on a local host "MAMP" for the JSON to parse, otherwise I get a: 'xml parsing error: syntax error' //
+    //I have to run this on a local host "MAMP" for the JSON to parse, otherwise I get a: 'xml parsing error: syntax error' 
+    //Alternatively, the page hosted on github will also function properly
 
-    //successfully checked JSON data with online evaluator: https://jsonlint.com/ //
+    //successfully checked JSON data with online evaluator: https://jsonlint.com/
 
 
 //Google Maps API Function to show Location
