@@ -216,6 +216,35 @@ body, button {
   font-family: "Courier New", Monaco, monospace;
 }
 
+
+/*SWAL Button Styling*/
+
+.swal-text {
+  font-family: "Courier New", Monaco, monospace;
+  background-color: white;
+  padding: 17px;
+  border: 1px solid #F0E1A1;
+  display: block;
+  margin: 22px;
+  text-align: center;
+  color: black;
+  text-shadow: .2px .2px .1px #222;
+}
+
+.swal-modal {
+  background-color: #F0E68C;
+  border: 3px solid white;
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #6495ED;
+  font-size: 18px;
+  border: 1px solid #3e549a;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
 /*Media Queries (mobile first / responsive web design/if/when nothandled bu using flexbox)*/
 
 
