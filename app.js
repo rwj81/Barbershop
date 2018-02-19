@@ -48,3 +48,34 @@ function initMap() {
         });
         map.setMapTypeId('terrain');
       }
+
+//button audio functions     https://youtu.be/VlwSz2dXK_8
+// https://stackoverflow.com/questions/21463752/javascript-audio-object-vs-html5-audio-tag
+
+var clipsfinal = new Audio();
+clipsfinal.src = "sounds/clipsfinal.mp3";
+
+var attach = document.getElementById("audioLink");
+attach.addEventListener("mouseover", function( event ){
+  event = clipsfinal.play();
+});
+
+//
+
+var buzzfinal = new Audio();
+buzzfinal.src = "sounds/buzzfinal.mp3";
+
+var attach = document.getElementById("audioLinkTwo");
+attach.addEventListener("mouseover", function( event ){
+  event = buzzfinal.play();
+});
+
+//
+
+var shavingcreamfinal = new Audio();
+shavingcreamfinal.src = "sounds/shavingcreamfinal.mp3";
+
+var attach = document.getElementById("banner");
+attach.addEventListener("mouseover", function( event ){
+  event = shavingcreamfinal.play();
+});
