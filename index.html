@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Hubbard Lane Barber Shop</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hubbard Lane Barber Shop in the heart of Saint Matthews">
-  <meta name="keywords" content="haircut, barber, shave, Saint Matthews, ST. Matthews, Louisville">
-</head>
-<body class="content">
+  <head>
+    <title>Hubbard Lane Barber Shop</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#c68c53"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hubbard Lane Barber Shop in the heart of Saint Matthews">
+    <meta name="keywords" content="haircut, barber, shave, Saint Matthews, ST. Matthews, Louisville">
+  </head>
+  <body class="content">
 
-  <header>
-    <h1>Hubbard Lane Barber Shop</h1>
-    <img class="banner" src="images/barberbanner.jpg"/ alt="Barber Shop Sign" >
-    <h4>Est. 1951</h4>
-    <div class="headerContainer">
-      <nav>
-        <ul>
-          <li><a href="staff.html" title="Staff">STAFF</a></li>
-          <li><a href="specials.html" title="Specials">SPECIALS</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+      <h1>Hubbard Lane Barber Shop</h1>
+      <img class="banner" src="images/barberbanner.jpg"/ alt="Barber Shop Sign" >
+      <h4>Est. 1951</h4>
+      <div class="headerContainer">
+        <nav>
+          <ul>
+            <li><a href="staff.html" title="Staff">STAFF</a></li>
+            <li><a href="specials.html" title="Specials">SPECIALS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<main class="container" id="containerBackground">
+    <main class="container" id="containerBackground">
        <div class="one">
          <h2>Specialties</h2>
           <p>
@@ -50,11 +51,11 @@
             <li>
               Jennifer
             </li>
-            <li>  <!--Button to insert a status list of availability of the barbers-->
+            <!--Button to insert a status list of availability of the barbers-->
+            <li>
               <button class="CheckCurrentAvailability" alt="Check Current Availability" title="Click for Current Availability" onclick="sendAJAX()">Check Current Availability</button>
               <p id="staffAvailability"></p>
-
-            </ul>
+          </ul>
         </div>
         <div class="four">
           <h2>Location</h2>
@@ -76,8 +77,6 @@
         <div class="six">
           <h2>Contact</h2>
             <p>(502)897-7700</p>
-
-            <P>             </P>
         </div>
       </div>
       <footer class="footer">
@@ -89,25 +88,25 @@
         <a href="mailto:willjoaquin@yahoo.com">Email Me</a>
       </footer>
 
-       </div>
+      </div>
      </main>
 
- <!--Scripts at end of HTML to run after HTML/CSS Load-->
+     <!--Scripts at end of HTML to run after HTML/CSS Load-->
 
-<!--jQuery -->
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous">
-  </script>
+     <!--jQuery -->
+     <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous" rel="noopener">
+     </script>
 
-  <!--Google Maps Api    -->
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuAHtb7O6YTvA6ef-GC_gnFApU5aMSn0E&callback=initMap" rel="noopener">
-  </script>
+     <!--Google Maps Api    -->
+     <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuAHtb7O6YTvA6ef-GC_gnFApU5aMSn0E&callback=initMap" rel="noopener">
+     </script>
 
-  <!--My JavaScript File for index.html-->
-  <script src="app.js"></script>
+     <!--My JavaScript File for index.html-->
+     <script src="app.js"></script>
 
-</body>
+   </body>
 </html>

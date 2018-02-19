@@ -4,6 +4,7 @@
   <title>Sign Up For Specials</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#c68c53"/>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Hubbard Lane Barber Shop in the heart of Saint Matthews">
@@ -25,98 +26,97 @@
     </div>
   </header>
 
-<main class="container" id="specialsBackground">
-  <div class="one">
-    <h2>Current Specials</h2>
-    <ul>
-    <li>Submit your information and your first haircut is on us!</li>
-    <br />
-    <li>We'll also enroll you in our Cut Club where every 10th haircut is on the house.</li>
-    </ul>
+  <main class="container" id="specialsBackground">
+    <div class="one">
+      <h2>Current Specials</h2>
+        <ul>
+          <li>Submit your information and your first haircut is on us!</li>
+          <br />
+          <li>We'll also enroll you in our Cut Club where every 10th haircut is on the house.</li>
+        </ul>
+      </div>
+      <div>
+        <!--fillable form for 'Cut Club' inquiries -->
+        <form>
+          <legend><h2>Join Our Cut Club</h2></legend>
+            <section>
+              <h3>Contact Information</h3>
+                <fieldset>
+                  <legend>Title</legend>
+                    <ul>
+                      <li>
+                        <label for="title_1">
+                          <input type="radio" id="title_1" name="title" value="Mr." >
+                          Mister
+                        </label>
+                      </li>
+                      <li>
+                        <label for="title_2">
+                          <input type="radio" id="title_2" name="title" value="Dr.">
+                          Doctor
+                        </label>
+                      </li>
+                      <li>
+                        <label for="title_3">
+                          <input type="radio" id="title_3" name="title" value="Esq.">
+                          Esquire
+                        </label>
+                      </li>
+                      <li>
+                        <label for="title_4">
+                          <input type="radio" id="title_4" name="title" value="Sir.">
+                          Sir
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                    <p>
+                        <label for="name">
+                          <span>Name: </span>
+                            <strong><abbr title="required">*</abbr></strong>
+                        </label>
+                          <input type="text" id="name" name="username">
+                   </p>
+                   <p>
+                        <label for="mail">
+                          <span>E-mail: </span>
+                            <strong><abbr title="required">*</abbr></strong>
+                        </label>
+                          <input type="email" id="mail" name="usermail">
+                  </p>
+                  <p>
+                      <label for="phone">
+                        <span>Phone: </span>
+                          <strong><abbr title="required">*</abbr></strong>
+                      </label>
+                        <input type="phone" id="phone" name="userphone">
+                  </p>
+                </section>
+                <section>
+                  <p> <button type="submit">Sign Me Up!</button> </p>
+                </section>
+            </form>
+          </div>
 
-  </div>
-  <div>
-    <!--fillable form for 'Cut Club' inquiries -->
-    <form>
-      <legend><h2>Join Our Cut Club</h2></legend>
-      <section>
-        <h3>Contact Information</h3>
-        <fieldset>
-          <legend>Title</legend>
-          <ul>
-              <li>
-                <label for="title_1">
-                  <input type="radio" id="title_1" name="title" value="Mr." >
-                  Mister
-                </label>
-              </li>
-              <li>
-                <label for="title_2">
-                  <input type="radio" id="title_2" name="title" value="Dr.">
-                  Doctor
-                </label>
-              </li>
-              <li>
-                <label for="title_3">
-                  <input type="radio" id="title_3" name="title" value="Esq.">
-                  Esquire
-                </label>
-              </li>
-              <li>
-                <label for="title_4">
-                  <input type="radio" id="title_4" name="title" value="Sir.">
-                  Sir
-                </label>
-              </li>
-          </ul>
-        </fieldset>
-        <p>
-          <label for="name">
-            <span>Name: </span>
-            <strong><abbr title="required">*</abbr></strong>
-          </label>
-          <input type="text" id="name" name="username">
-        </p>
-        <p>
-          <label for="mail">
-            <span>E-mail: </span>
-            <strong><abbr title="required">*</abbr></strong>
-          </label>
-          <input type="email" id="mail" name="usermail">
-        </p>
-        <p>
-          <label for="phone">
-            <span>Phone: </span>
-            <strong><abbr title="required">*</abbr></strong>
-          </label>
-          <input type="phone" id="phone" name="userphone">
-        </p>
-      </section>
-      <section>
-        <p> <button type="submit">Sign Me Up!</button> </p>
-      </section>
-    </form>
-  </div>
-
-  <footer class="footer">
-    <p>Established 1951</p><br/>
-    <a href="https://www.yelp.com/biz/hubbard-lane-barber-shop-louisville?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank" rel="noopener"><img src="images/Yelplogo.png" title="Yelp" alt="Yelp Logo" ></a>
-    <a href="https://www.bbb.org/louisville/business-reviews/barber/hubbard-lane-barber-shop-in-louisville-ky-9001075" target="_blank" rel="noopener"><img src="images/BBBlogo.png" title="BBB" alt="BBB "></a>
-    <a href="https://www.facebook.com/pages/Hubbard-Lane-Barber-Shop/111871952201492" target="_blank" rel="noopener"><img src="images/FBlogo.png" title="Facebook" alt="Facebook Logo"></a>
-    <p>&copy;2018 Will Joaquin</p>
-    <a href="mailto:willjoaquin@yahoo.com">Email Me</a>
-  </footer>
-</main>
+    <footer class="footer">
+      <p>Established 1951</p><br/>
+      <a href="https://www.yelp.com/biz/hubbard-lane-barber-shop-louisville?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank" rel="noopener"><img src="images/Yelplogo.png" title="Yelp" alt="Yelp Logo" ></a>
+      <a href="https://www.bbb.org/louisville/business-reviews/barber/hubbard-lane-barber-shop-in-louisville-ky-9001075" target="_blank" rel="noopener"><img src="images/BBBlogo.png" title="BBB" alt="BBB "></a>
+      <a href="https://www.facebook.com/pages/Hubbard-Lane-Barber-Shop/111871952201492" target="_blank" rel="noopener"><img src="images/FBlogo.png" title="Facebook" alt="Facebook Logo"></a>
+      <p>&copy;2018 Will Joaquin</p>
+      <a href="mailto:willjoaquin@yahoo.com">Email Me</a>
+    </footer>
+  </main>
 
 <!--jQuery -->
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous">
-  </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
 
 <!--My JavaScript File for specials.html-->
-<script src="specials.js"></script>
+    <script src="specials.js"></script>
 
-</body>
+  </body>
 </html>

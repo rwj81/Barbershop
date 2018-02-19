@@ -25,18 +25,15 @@
 
     	checkAvailability.open('GET', 'staffstatus.json');
     	checkAvailability.send();
-
     }
 
-    //I have to run this on a local host "MAMP" for the JSON to parse, otherwise I get a: 'xml parsing error: syntax error' 
-    //Alternatively, the page hosted on github will also function properly
+    //I have to run this on a local host "MAMP" for the JSON to parse, otherwise I get a: 'xml parsing error: syntax error'
+    //Alternatively, the page hosted bu a server, like on github will also function properly
 
     //successfully checked JSON data with online evaluator: https://jsonlint.com/
 
 
-//Google Maps API Function to show Location
-
-    // API key is  AIzaSyBuAHtb7O6YTvA6ef-GC_gnFApU5aMSn0E
+//Google Maps API Function to show Location API key is  AIzaSyBuAHtb7O6YTvA6ef-GC_gnFApU5aMSn0E
 
 function initMap() {
         var uluru = {lat: 38.251078, lng: -85.639735};
