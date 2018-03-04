@@ -3,22 +3,22 @@
 {
 "name" : "Doris",
 "available" : [false, false, true, true, true, false, true],
-"monday" : true,
+"monday" : false,
 "tuesday" : true,
 "wednesday" : true,
 "thursday" : true,
 "friday" : false,
-"saturday" : false,
+"saturday" : true,
 "sunday" : false
 },
 
 {
 "name" : "Anthony",
-"available" : [false, false, true, false, true, false, false],
+"available" : [false, false, true, false, true, true, true],
 "monday" : false,
 "tuesday" : true,
-"wednesday" : true,
-"thursday" : false,
+"wednesday" : false,
+"thursday" : true,
 "friday" : true,
 "saturday" : true,
 "sunday" : false
@@ -26,11 +26,11 @@
 
 {
 "name" : "Jennifer",
-"available" : [true, true, false, true, false, true, true],
+"available" : [false, false, false, true, false, true, true],
 "monday" : false,
 "tuesday" : false,
-"wednesday" : false,
-"thursday" : true,
+"wednesday" : true,
+"thursday" : false,
 "friday" : true,
 "saturday" : true,
 "sunday" : false

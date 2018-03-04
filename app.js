@@ -4,17 +4,11 @@
  function sendAJAX() {
 
 var checkAvailability = new XMLHttpRequest();
-
-function getToday() {
-    var day = new Date();
-    var today = day.getDay();
-  }
-
 checkAvailability.onreadystatechange = function () {
   if(checkAvailability.readyState === 4) {
     var employees = JSON.parse(checkAvailability.responseText);
 
-//function findDate() {
+//function findDate() {         ///alternative attempt to select date as number value then convert to name to then parse.
 //var d = new Date();
 //var weekday = new Array(7);
 //weekday[0] = "sunday";
@@ -27,11 +21,16 @@ checkAvailability.onreadystatechange = function () {
 
 //var n = weekday[d.getDay()];}
 
-//return getToday here
+// function getToday()
+    var day = new Date();
+    var today = day.getDay()
+
+
+
 
         var statusHTML = '<ul class="bulleted">';
         for (var i=0;  i<employees.length; i += 1) {
-            if (employees[i].available[4] === true) {                           //find out how to fill the value (numerical via "today" or spelled) within the brackets [].  the KEY is 'available' the value depends on the day of the week from the getToday function.
+            if (employees[i].available[today] === true) {
             statusHTML += '<li class="available">';
           } else {
             statusHTML += '<li class="unavailable">';
@@ -51,7 +50,7 @@ checkAvailability.onreadystatechange = function () {
     }
 
 
-// change the value "available" in line 34 with any other day and it will pull the values from the json for that day.  Need to find a function to get the day and set that automatically.
+// change the value "available" in line 32 with any other day and it will pull the values from the json for that day.  Need to find a function to get the day and set that automatically.
 
     //I have to run this on a local host "MAMP" for the JSON to parse, otherwise I get a: 'xml parsing error: syntax error'
     //Alternatively, the page hosted bu a server, like on github will also function properly
