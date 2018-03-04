@@ -2,8 +2,8 @@
 
 {
 "name" : "Doris",
-"available" : false,
-"monday" : false,
+"available" : [false, false, true, true, true, false, true],
+"monday" : true,
 "tuesday" : true,
 "wednesday" : true,
 "thursday" : true,
@@ -14,7 +14,7 @@
 
 {
 "name" : "Anthony",
-"available" : false,
+"available" : [false, false, true, false, true, false, false],
 "monday" : false,
 "tuesday" : true,
 "wednesday" : true,
@@ -26,7 +26,7 @@
 
 {
 "name" : "Jennifer",
-"available" : true,
+"available" : [true, true, false, true, false, true, true],
 "monday" : false,
 "tuesday" : false,
 "wednesday" : false,

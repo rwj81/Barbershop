@@ -3,13 +3,35 @@
     //AJAX Request triggered by button click
  function sendAJAX() {
 
-    var checkAvailability = new XMLHttpRequest();
-  	checkAvailability.onreadystatechange = function () {
-   	if(checkAvailability.readyState === 4) {
-        var employees = JSON.parse(checkAvailability.responseText);
+var checkAvailability = new XMLHttpRequest();
+
+function getToday() {
+    var day = new Date();
+    var today = day.getDay();
+  }
+
+checkAvailability.onreadystatechange = function () {
+  if(checkAvailability.readyState === 4) {
+    var employees = JSON.parse(checkAvailability.responseText);
+
+//function findDate() {
+//var d = new Date();
+//var weekday = new Array(7);
+//weekday[0] = "sunday";
+//weekday[1] = "monday";
+//weekday[2] = "tuesday";
+//weekday[3] = "wednesday";
+//weekday[4] = "thursday";
+//weekday[5] = "friday";
+//weekday[6] = "saturday";
+
+//var n = weekday[d.getDay()];}
+
+//return getToday here
+
         var statusHTML = '<ul class="bulleted">';
-        for (var i=0; i<employees.length; i += 1) {
-          if (employees[i].available === true) {
+        for (var i=0;  i<employees.length; i += 1) {
+            if (employees[i].available[4] === true) {                           //find out how to fill the value (numerical via "today" or spelled) within the brackets [].  the KEY is 'available' the value depends on the day of the week from the getToday function.
             statusHTML += '<li class="available">';
           } else {
             statusHTML += '<li class="unavailable">';
@@ -25,7 +47,11 @@
 
     	checkAvailability.open('GET', 'staffstatus.json');
     	checkAvailability.send();
+
     }
+
+
+// change the value "available" in line 34 with any other day and it will pull the values from the json for that day.  Need to find a function to get the day and set that automatically.
 
     //I have to run this on a local host "MAMP" for the JSON to parse, otherwise I get a: 'xml parsing error: syntax error'
     //Alternatively, the page hosted bu a server, like on github will also function properly
@@ -49,7 +75,7 @@ function initMap() {
         map.setMapTypeId('terrain');
       }
 
-//button audio functions     
+//button audio functions
 
 var clipsfinal = new Audio();
 clipsfinal.src = "sounds/clipsfinal.mp3";
