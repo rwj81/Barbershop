@@ -48,12 +48,12 @@ The footer, common throughout all pages, has PNG images linked to real-world pag
 
 ### Optimization:
 
-I’ve experimented several times with the ‘audit’ feature of Chrome Developer Tools.  My results are all over the place, depending on when I run the audit. The only constant is a 97% Accessibility score.  My best practices and performance scores run closer to 65-75% and my progressive web app score is usually lower still.  Given more time I would probably change my PNG files to another format and maybe work on the other graphics more.
+I’ve experimented several times with the ‘audit’ feature of Chrome Developer Tools.  My results are all over the place, depending on when I run the audit. The only constant is a 97% accessibility score.  My best practices and performance scores run closer to 65-75% and my progressive web app score is usually lower still.  Given more time I would probably change my PNG files to another format and maybe work on the other graphics more.
 
 
 ## Results and Reflection
 
-I think this is a functional site. It contains real and useful information for customers of the barber shop.  Every time I learned a new process I wanted to start over, but instead I decided to plug ahead and incorporate a little piece of many of the topics from the Treehouse courses.  Though I have a long way to go I believe this represents much of what I have learned this far. 
+I think this is a functional site. It contains real and useful information for customers of the barber shop.  Every time I learned a new process I wanted to start over, but instead I decided to plug ahead and incorporate a little piece of many of the topics from the Treehouse courses.  Though I have a long way to go I believe this represents much of what I have learned thus far. 
 
 
 
