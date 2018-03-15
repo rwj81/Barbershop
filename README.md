@@ -1,4 +1,4 @@
-# barber_shop_experiment
+# Barber Shop Experiment
 
 This is my first website and reflects my attempt to incorporate a number of methods I learned during my Code Louisville Front End Web Development class.
 
