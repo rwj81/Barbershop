@@ -16,16 +16,4 @@ $("button").click(function(){
   });
   });
 
-//Sweetalert (swal) can be replaced with "alert" for browser-stryled boxes.
-
-
-//button audio functions     https://youtu.be/VlwSz2dXK_8
-// https://stackoverflow.com/questions/21463752/javascript-audio-object-vs-html5-audio-tag
-
-var clipsfinal = new Audio();
-clipsfinal.src = "sounds/clipsfinal.mp3";
-
-var attach = document.getElementById("audioLink");
-attach.addEventListener("mouseover", function( event ){
-  event = clipsfinal.play();
-});
+//Sweetalert (swal) can be replaced with "alert" for browser-styled boxes.

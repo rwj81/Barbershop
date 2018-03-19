@@ -21,7 +21,6 @@ footer {
   flex-direction: column;
   border-bottom: 1px solid #F2F2F2;
   padding: .3em 0;
-
   }
 
 
@@ -97,26 +96,6 @@ li a:hover {
   flex-grow: 2
 }
 
-
-/* Sticky Footer via flexbox experiment*/
-
-/*FOOTER IS NOT CURRENTLY STICKING IN CHROME BUT IT IS IN FIREFOX--fixed this by making footer part of the flexbox so the css below isn't needed:
-
-html, body {
-  height: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-.footer {
- margin-top: auto;
-}
-.content {
-  flex: 1 0 auto;
-  min-height: calc(100vh - 89px);
-  }
 
 /*AJAX Barber Availability Response*/
 

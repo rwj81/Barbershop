@@ -22,11 +22,9 @@ checkAvailability.onreadystatechange = function () {
 //var n = weekday[d.getDay()];}
 
 // function getToday()
+
     var day = new Date();
     var today = day.getDay()
-
-
-
 
         var statusHTML = '<ul class="bulleted">';
         for (var i=0;  i<employees.length; i += 1) {
@@ -50,13 +48,10 @@ checkAvailability.onreadystatechange = function () {
     }
 
 
-// change the value "available" in line 32 with any other day and it will pull the values from the json for that day.  Need to find a function to get the day and set that automatically.
-
     //I have to run this on a local host "MAMP" for the JSON to parse, otherwise I get a: 'xml parsing error: syntax error'
-    //Alternatively, the page hosted bu a server, like on github will also function properly
+    //Alternatively, the page hosted by a server, like on github will also function properly
 
     //successfully checked JSON data with online evaluator: https://jsonlint.com/
-
 
 //Google Maps API Function to show Location API key is  AIzaSyBuAHtb7O6YTvA6ef-GC_gnFApU5aMSn0E
 
