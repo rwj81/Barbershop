@@ -39,7 +39,23 @@ var day = new Date();
     var today = day.getDay()
 ```
 
-If you check this on a Sunday or Monday, they'll all be unavailable because the shop is closed those days.  I had also tried to run a more complex version that first converted the day's number value (ex. sunday = 0) to a weekday by name and then pull that boolean value from the JSON, but I ran low on time.  It seems unnecessarily complex when the first approach works.  However, I left it commented out in the file in case I want to return to it later.
+If you check this on a Sunday or Monday, they'll all be unavailable because the shop is closed those days.  I had also tried to run a more complex version that first converted the day's number value (ex. sunday = 0) to a weekday by name and then pull that boolean value from the JSON, but I ran low on time.  
+
+```
+function findDate() {         
+var d = new Date();
+var weekday = new Array(7);
+weekday[0] = "sunday";
+weekday[1] = "monday";
+weekday[2] = "tuesday";
+weekday[3] = "wednesday";
+weekday[4] = "thursday";
+weekday[5] = "friday";
+weekday[6] = "saturday";
+
+var n = weekday[d.getDay()];}
+```
+It seems unnecessarily complex when the first approach works.  However, I left it commented out in the file in case I want to return to it later.
 
 ### Audio:
 
