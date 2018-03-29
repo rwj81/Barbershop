@@ -24,7 +24,7 @@ I flirted with CSS Grid but ended up using Flexbox for the majority of the pages
 
 ### CSS: 
 
-I utilized two CSS files; One that is completely not my own (normalize.css) and one that is almost entirely my own (style.css).  I have many class and id selectors.  Some of these were used to employ flexbox, such as '''.container''' and ‘.one .two .three .four .five .six’.  Others were used to attach background images (opensource) via ‘#containerBackground’, ‘#specialsBackground’, ‘#staffBackground’.  These are just a few examples.
+I utilized two CSS files; One that is completely not my own (normalize.css) and one that is almost entirely my own (style.css).  I have many class and id selectors.  Some of these were used to employ flexbox, such as ‘.container’ and ‘.one .two .three .four .five .six’.  Others were used to attach background images (opensource) via ‘#containerBackground’, ‘#specialsBackground’, ‘#staffBackground’.  These are just a few examples.
 
 ### API:
 
