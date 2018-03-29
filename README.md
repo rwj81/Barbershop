@@ -32,11 +32,30 @@ I used a Google Maps API on the Home page to provide a map for the shop's locati
 
 ### AJAX/JSON:
 
-I used an AJAX function (app.js) with JavaScript to pull data from a JSON file (staffstatus.json) to allow users to check the availability of each of the barbers on any given day. This started with a function from the Treehouse course. However, I customized it for this application.  I wanted to load the JSON file with data for each barber and each day of the week to show when they would be in the shop.  I noticed that a lot of customers will have a preferred barber, and some will even depart the shop to come back another day if they learn their favorite is not at work.  I tried two different ways to sort the data (and kept both in the JSON file).  I settled on the getDay function to return a numerical value for the day of the week and then assigned boolean values for each barber for each corresponding day.  If you check this on a Sunday or Monday, they'll all be unavailable because the shop is closed those days.  I had also tried to run a more complex version that first converted the day's number value (ex. sunday = 0) to a weekday by name and then pull that boolean value from the JSON, but I ran low on time.  It seems unnecessarily complex when the first approach works.  However, I left it commented out in the file in case I want to return to it later.
+I used an AJAX function (app.js) with JavaScript to pull data from a JSON file (staffstatus.json) to allow users to check the availability of each of the barbers on any given day. This started with a function from the Treehouse course. However, I customized it for this application.  I wanted to load the JSON file with data for each barber and each day of the week to show when they would be in the shop.  I noticed that a lot of customers will have a preferred barber, and some will even depart the shop to come back another day if they learn their favorite is not at work.  I tried two different ways to sort the data (and kept both in the JSON file).  I settled on the getDay function to return a numerical value for the day of the week and then assigned boolean values for each barber for each corresponding day.  
+
+```
+var day = new Date();
+    var today = day.getDay()
+```
+
+If you check this on a Sunday or Monday, they'll all be unavailable because the shop is closed those days.  I had also tried to run a more complex version that first converted the day's number value (ex. sunday = 0) to a weekday by name and then pull that boolean value from the JSON, but I ran low on time.  It seems unnecessarily complex when the first approach works.  However, I left it commented out in the file in case I want to return to it later.
 
 ### Audio:
 
-I recorded three sounds myself at home; clippers, scissors, and shaving cream and converted them to MP3 format (buzzfinal.mp3, clipsfinal.mp3 and shavingcreamfinal.mp3).  I then added mouseover event listeners with JavaScript to the navigation elements and one to the shop logo/banner that also has some CSS transformation. These are the same on each of the pages for each respective action, linked to the same file (app.js).  I tried to make these applicable and kind of fun without making them too obnoxious; mostly they are just a learning exercise.  
+I recorded three sounds myself at home; clippers, scissors, and shaving cream and converted them to MP3 format (buzzfinal.mp3, clipsfinal.mp3 and shavingcreamfinal.mp3).  I then added mouseover event listeners with JavaScript to the navigation elements and one to the shop logo/banner that also has some CSS transformation. These are the same on each of the pages for each respective action, linked to the same file (app.js).  Here's one of them:
+
+```
+var clipsfinal = new Audio();
+clipsfinal.src = "sounds/clipsfinal.mp3";
+
+var attach = document.getElementById("audioLink");
+attach.addEventListener("mouseover", function( event ){
+  event = clipsfinal.play();
+});
+```
+
+I tried to make these applicable and kind of fun without making them too obnoxious; mostly they are just a learning exercise.  
 
 ### HTML Form and Related Alerts:
 
